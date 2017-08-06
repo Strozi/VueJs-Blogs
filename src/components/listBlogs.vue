@@ -27,9 +27,8 @@ export default {
 
   },
   created(){
-    this.$http.get('https://jsonplaceholder.typicode.com/posts/').then(function(data){
-      //10 out of 100
-      this.blogs = data.body.slice(0,10);
+    this.$http.get('firebase/posts/').then(function(data){
+
     })
   },
   computed:{
